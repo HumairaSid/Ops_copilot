@@ -1,0 +1,17 @@
+C:\Users\User\code-repo\Ops_copilot\Ops_copilot.Infrastructure\obj\Debug\net8.0\Ops_copilot.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\User\code-repo\Ops_copilot\Ops_copilot.Infrastructure\obj\Debug\net8.0\Ops_copilot.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\code-repo\Ops_copilot\Ops_copilot.Infrastructure\obj\Debug\net8.0\Ops_copilot.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\User\code-repo\Ops_copilot\Ops_copilot.Infrastructure\obj\Debug\net8.0\Ops_copilot.Infrastructure.AssemblyInfo.cs
+C:\Users\User\code-repo\Ops_copilot\Ops_copilot.Infrastructure\obj\Debug\net8.0\Ops_copilot.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\User\code-repo\Ops_copilot\Ops_copilot.Infrastructure\bin\Debug\net8.0\Ops_copilot.Infrastructure.deps.json
+C:\Users\User\code-repo\Ops_copilot\Ops_copilot.Infrastructure\bin\Debug\net8.0\Ops_copilot.Infrastructure.dll
+C:\Users\User\code-repo\Ops_copilot\Ops_copilot.Infrastructure\bin\Debug\net8.0\Ops_copilot.Infrastructure.pdb
+C:\Users\User\code-repo\Ops_copilot\Ops_copilot.Infrastructure\bin\Debug\net8.0\Ops_copilot.Application.dll
+C:\Users\User\code-repo\Ops_copilot\Ops_copilot.Infrastructure\bin\Debug\net8.0\Ops_copilot.Domain.dll
+C:\Users\User\code-repo\Ops_copilot\Ops_copilot.Infrastructure\bin\Debug\net8.0\Ops_copilot.Application.pdb
+C:\Users\User\code-repo\Ops_copilot\Ops_copilot.Infrastructure\bin\Debug\net8.0\Ops_copilot.Domain.pdb
+C:\Users\User\code-repo\Ops_copilot\Ops_copilot.Infrastructure\obj\Debug\net8.0\Ops_copi.FA7062FF.Up2Date
+C:\Users\User\code-repo\Ops_copilot\Ops_copilot.Infrastructure\obj\Debug\net8.0\Ops_copilot.Infrastructure.dll
+C:\Users\User\code-repo\Ops_copilot\Ops_copilot.Infrastructure\obj\Debug\net8.0\refint\Ops_copilot.Infrastructure.dll
+C:\Users\User\code-repo\Ops_copilot\Ops_copilot.Infrastructure\obj\Debug\net8.0\Ops_copilot.Infrastructure.pdb
+C:\Users\User\code-repo\Ops_copilot\Ops_copilot.Infrastructure\obj\Debug\net8.0\ref\Ops_copilot.Infrastructure.dll

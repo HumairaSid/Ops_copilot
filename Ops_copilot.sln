@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ops_copilot.Domain", "Ops_copilot.Domain\Ops_copilot.Domain.csproj", "{BA83BC93-CC5F-4907-A8EE-2898AAF69CB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ops_copilot.Application", "Ops_copilot.Application\Ops_copilot.Application.csproj", "{F13FCF51-1BA7-49F1-8B56-360F5E6F7082}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ops_copilot.Infrastructure", "Ops_copilot.Infrastructure\Ops_copilot.Infrastructure.csproj", "{DD5C0581-A206-4617-BD81-70557DD26844}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ops_copilot.Api", "Ops_copilot.Api\Ops_copilot.Api.csproj", "{657A252E-2D92-4886-A35E-8A3FF14DED83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA83BC93-CC5F-4907-A8EE-2898AAF69CB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA83BC93-CC5F-4907-A8EE-2898AAF69CB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA83BC93-CC5F-4907-A8EE-2898AAF69CB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA83BC93-CC5F-4907-A8EE-2898AAF69CB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F13FCF51-1BA7-49F1-8B56-360F5E6F7082}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F13FCF51-1BA7-49F1-8B56-360F5E6F7082}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F13FCF51-1BA7-49F1-8B56-360F5E6F7082}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F13FCF51-1BA7-49F1-8B56-360F5E6F7082}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD5C0581-A206-4617-BD81-70557DD26844}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD5C0581-A206-4617-BD81-70557DD26844}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD5C0581-A206-4617-BD81-70557DD26844}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD5C0581-A206-4617-BD81-70557DD26844}.Release|Any CPU.Build.0 = Release|Any CPU
+		{657A252E-2D92-4886-A35E-8A3FF14DED83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{657A252E-2D92-4886-A35E-8A3FF14DED83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{657A252E-2D92-4886-A35E-8A3FF14DED83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{657A252E-2D92-4886-A35E-8A3FF14DED83}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

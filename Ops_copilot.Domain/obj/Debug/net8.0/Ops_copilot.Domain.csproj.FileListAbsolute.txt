@@ -1,0 +1,12 @@
+C:\Users\User\code-repo\Ops_copilot\Ops_copilot.Domain\bin\Debug\net8.0\Ops_copilot.Domain.deps.json
+C:\Users\User\code-repo\Ops_copilot\Ops_copilot.Domain\bin\Debug\net8.0\Ops_copilot.Domain.dll
+C:\Users\User\code-repo\Ops_copilot\Ops_copilot.Domain\bin\Debug\net8.0\Ops_copilot.Domain.pdb
+C:\Users\User\code-repo\Ops_copilot\Ops_copilot.Domain\obj\Debug\net8.0\Ops_copilot.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\code-repo\Ops_copilot\Ops_copilot.Domain\obj\Debug\net8.0\Ops_copilot.Domain.AssemblyInfoInputs.cache
+C:\Users\User\code-repo\Ops_copilot\Ops_copilot.Domain\obj\Debug\net8.0\Ops_copilot.Domain.AssemblyInfo.cs
+C:\Users\User\code-repo\Ops_copilot\Ops_copilot.Domain\obj\Debug\net8.0\Ops_copilot.Domain.csproj.CoreCompileInputs.cache
+C:\Users\User\code-repo\Ops_copilot\Ops_copilot.Domain\obj\Debug\net8.0\Ops_copilot.Domain.dll
+C:\Users\User\code-repo\Ops_copilot\Ops_copilot.Domain\obj\Debug\net8.0\refint\Ops_copilot.Domain.dll
+C:\Users\User\code-repo\Ops_copilot\Ops_copilot.Domain\obj\Debug\net8.0\Ops_copilot.Domain.pdb
+C:\Users\User\code-repo\Ops_copilot\Ops_copilot.Domain\obj\Debug\net8.0\ref\Ops_copilot.Domain.dll
+C:\Users\User\code-repo\Ops_copilot\Ops_copilot.Domain\obj\Debug\net8.0\Ops_copilot.Domain.csproj.AssemblyReference.cache

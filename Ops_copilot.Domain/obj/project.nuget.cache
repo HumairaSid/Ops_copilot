@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "HkJokeKfeQE=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\User\\code-repo\\Ops_copilot\\Ops_copilot.Domain\\Ops_copilot.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.ai.abstractions\\9.5.0\\microsoft.extensions.ai.abstractions.9.5.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.vectordata.abstractions\\9.7.0\\microsoft.extensions.vectordata.abstractions.9.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
