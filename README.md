@@ -55,3 +55,8 @@ Ops_copilot
     │   ├── InMemoryDocumentStore.cs
     │   └── InMemoryVectorStorage.cs
     └── ServiceRegistration.cs
+
+## ⚠️ Current Status: Integration Testing
+* **API Status:** Running (Port 5006).
+* **Current Challenge:** Finalizing the handshake between Semantic Kernel and local Ollama instance (handling 404 response from local LLM endpoint).
+* **Architecture:** Fully implemented Clean Architecture (Domain, Application, Infrastructure, API).
