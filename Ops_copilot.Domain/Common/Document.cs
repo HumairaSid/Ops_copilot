@@ -9,8 +9,9 @@ public class Document
     public string ContentType { get; init; } = string.Empty;
     public long SizeInBytes { get; init; }
     public DateTime CreatedAt { get; init; } = DateTime.UtcNow;
-    
+
     public List<DocumentChunk> Chunks { get; private set; } = new();
 
     public void AddChunks(IEnumerable<DocumentChunk> chunks) => Chunks.AddRange(chunks);
+
 }

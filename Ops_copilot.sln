@@ -11,13 +11,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ops_copilot.Infrastructure"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ops_copilot.Api", "Ops_copilot.Api\Ops_copilot.Api.csproj", "{657A252E-2D92-4886-A35E-8A3FF14DED83}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ops_copilot.UnitTest", "Ops_copilot.UnitTest\Ops_copilot.UnitTest.csproj", "{3A852BBE-1F9B-4203-AD50-01C03695152C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{BA83BC93-CC5F-4907-A8EE-2898AAF69CB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -36,5 +35,12 @@ Global
 		{657A252E-2D92-4886-A35E-8A3FF14DED83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{657A252E-2D92-4886-A35E-8A3FF14DED83}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{657A252E-2D92-4886-A35E-8A3FF14DED83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A852BBE-1F9B-4203-AD50-01C03695152C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A852BBE-1F9B-4203-AD50-01C03695152C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A852BBE-1F9B-4203-AD50-01C03695152C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A852BBE-1F9B-4203-AD50-01C03695152C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal

@@ -4,6 +4,11 @@ namespace Ops_copilot.Application;
 
 public interface ISemanticAIService
 {
+
+    Task<Result<Guid>> ProcessDocumentAsync(
+    Stream fileStream,
+    string fileName,
+    CancellationToken ct = default);
     /// <summary>
     /// Orchestrates the process of converting a Document's chunks into 
     /// embeddings and storing them in the Vector Database.

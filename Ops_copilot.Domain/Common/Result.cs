@@ -1,5 +1,3 @@
-using System;
-
 namespace Ops_copilot.Domain.Common;
 
 public class Result<TValue>

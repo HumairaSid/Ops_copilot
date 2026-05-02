@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Ops_copilot.Application;
 using Ops_copilot.Domain.Common;
-using Ops_copilot.Domain.Interfaces;
 
 namespace Ops_copilot.API.Controllers
 {
@@ -9,23 +8,16 @@ namespace Ops_copilot.API.Controllers
     [Route("api/documents")]
     public class DocumentController : ControllerBase
     {
-        private readonly IPdfService _pdfService;
-        private readonly IInMemoryDocumentStore _docStore;
         private readonly ISemanticAIService _aiService;
 
-        public DocumentController(
-            IPdfService pdfService,
-            IInMemoryDocumentStore docStore,
-            ISemanticAIService aiService)
+        public DocumentController(ISemanticAIService aiService)
         {
-            _pdfService = pdfService;
-            _docStore = docStore;
             _aiService = aiService;
         }
 
         // 1️⃣ Upload & Process PDF
         [HttpPost("upload")]
-        [DisableRequestSizeLimit] // optional, for large files
+        [RequestSizeLimit(2 * 1024 * 1024)] // Limit to 2MB
         public async Task<IActionResult> UploadDocument(
             [FromForm] IFormFile file,
             CancellationToken ct)
@@ -33,27 +25,19 @@ namespace Ops_copilot.API.Controllers
             if (file == null || file.Length == 0)
                 return BadRequest("Invalid file.");
 
+            if (file.Length > 2 * 1024 * 1024)
+                return BadRequest("Max file size is 2 MB");
+
+            if (!file.ContentType.Equals("application/pdf", StringComparison.OrdinalIgnoreCase))
+                return BadRequest("Only PDF files are supported.");
+
             using var stream = file.OpenReadStream();
-            var documentId = Guid.NewGuid();
+            var result = await _aiService.ProcessDocumentAsync(stream, file.FileName, ct);
 
-            var extractResult = await _pdfService.ExtractTextAsync(stream, documentId, ct);
-            if (extractResult.IsFailure)
-                return Problem(extractResult.Error.Message);
+            if (result.IsFailure)
+                return BadRequest(result.Error.Message);
 
-            var document = new Document
-            {
-                Id = documentId,
-                FileName = file.FileName
-            };
-            document.AddChunks(extractResult.Value!);
-
-            await _docStore.UpsertAsync(document, ct);
-
-            var indexResult = await _aiService.IndexDocumentChunksAsync(document, ct);
-            if (indexResult.IsFailure)
-                return Problem(indexResult.Error.Message);
-
-            return Ok(new { DocumentId = documentId, ChunksProcessed = document.Chunks.Count });
+            return Ok(new { documentId = result.Value });
         }
 
         // 2️⃣ Summarize Document
@@ -69,19 +53,21 @@ namespace Ops_copilot.API.Controllers
         [HttpPost("{id:guid}/ask")]
         public async Task<IActionResult> AskDocumentQuestion(
             Guid id,
-            [FromBody] string question,
+            [FromBody] AskQuestionRequest request,
             CancellationToken ct)
         {
-            if (string.IsNullOrWhiteSpace(question))
+            if (request == null || string.IsNullOrWhiteSpace(request.Question))
                 return BadRequest("Question is required.");
 
-            var result = await _aiService.AnswerQuestionAsync(id, question, ct);
+            var result = await _aiService.AnswerQuestionAsync(id, request.Question, ct);
             if (result.IsFailure) return Problem(result.Error.Message);
-            var response = new AnswerResponse
-            {
-                Answer = result.Value!
-            };
-            return Ok(response);
+            return Ok(new { answer = result.Value });
+        }
+        [HttpGet("test")]
+        public async Task<IActionResult> Testservice()
+        {
+
+            return Ok("Service is up and running!");
         }
     }
 }
