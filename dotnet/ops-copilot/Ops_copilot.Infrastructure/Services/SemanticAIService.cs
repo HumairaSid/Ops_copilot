@@ -166,7 +166,7 @@ public class SemanticAIService : ISemanticAIService
             {
                 { "input", fullText },
                 { "targetLanguage", "English" },
-                { "maxLength", "200" }
+                { "maxLength", "20B0" }
             };
 
             var response = await _kernel.InvokePromptAsync(PromptTemplates.SummarizeTemplate, arguments, cancellationToken: ct);
